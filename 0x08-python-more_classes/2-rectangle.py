@@ -34,6 +34,7 @@ class Rectangle:
     def perimeter(self):
         return 2 * (self.__width + self.__height)
 
+
 # Test cases
 my_rectangle = Rectangle(2, 4)
 print("Area:", my_rectangle.area())
