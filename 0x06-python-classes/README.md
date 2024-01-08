@@ -56,12 +56,6 @@ guillaume@ubuntu:~/0x06$ ./1-main.py
 {'_Square__size': 3}
 'Square' object has no attribute 'size'
 'Square' object has no attribute '__size'
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 1-square.py
    
 ## 2. Size validation
 ### mandatory
@@ -117,12 +111,6 @@ guillaume@ubuntu:~/0x06$ ./2-main.py
 'Square' object has no attribute '__size'
 size must be an integer
 size must be >= 0``
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 2-square.py
    
 ## 3. Area of a square
 ### mandatory
