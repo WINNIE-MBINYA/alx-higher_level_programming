@@ -186,12 +186,6 @@ guillaume@ubuntu:~/0x06$ ./4-main.py
 Area: 7921 for size: 89
 Area: 9 for size: 3
 size must be an integer
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 4-square.py
    
 ## 5. Printing a square
 ### mandatory
@@ -244,12 +238,6 @@ guillaume@ubuntu:~/0x06$ ./5-main.py
 --
 
 --
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 5-square.py
    
 ## 6. Coordinates of a square
 ### mandatory
