@@ -303,12 +303,6 @@ ___###$
 ___###$
 ___###$
 --$
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 6-square.py
    
 ## 7. Singly linked list
 ### advanced
@@ -362,12 +356,6 @@ guillaume@ubuntu:~/0x06$ ./100-main.py
 5
 10
 12
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 100-singly_linked_list.py
    
 ## 8. Print Square instance
 ### advanced
@@ -414,12 +402,6 @@ ____#####$
 ____#####$
 ____#####$
 ____#####$
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 101-square.py
    
 ## 9. Compare 2 squares
 ### advanced
@@ -458,12 +440,6 @@ guillaume@ubuntu:~/0x06$ ./102-main.py
 Square 5 < Square 6
 Square 5 <= Square 6
 Square 5 != Square 6
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 102-square.py
    
 10. ByteCode -> Python #5
 #advanced
@@ -519,9 +495,4 @@ Disassembly of circumference:
              16 BINARY_MULTIPLY
              17 RETURN_VALUE
 Tip: Python bytecode
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 103-magic_class.py
    
