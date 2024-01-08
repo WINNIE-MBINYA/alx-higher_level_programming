@@ -13,8 +13,8 @@ print(type(my_square))
 print(my_square.__dict__)``
 
 guillaume@ubuntu:~/0x06$ ./0-main.py
-``<class '0-square.Square'>
-{}``
+<class '0-square.Square'>
+{}
 guillaume@ubuntu:~/0x06$ 
 Repo:
 
