@@ -147,12 +147,6 @@ Area: 9
 'Square' object has no attribute 'size'
 'Square' object has no attribute '__size'
 Area: 25
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 3-square.py
    
 ## 4. Access and update private attribute
 ### mandatory
