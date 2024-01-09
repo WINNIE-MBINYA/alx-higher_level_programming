@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
-"""
-This module encapsulates the Student class, designed to model the essential attributes of a student.
-"""
+"""This module encapsulates the Student class"""
+
 
 class Student:
     """
@@ -24,15 +23,15 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-        Generates a dictionary representation of the Student instance, tailored for JSON serialization.
+        Generates a dictionary representation of the Student instance.
 
         Args:
-            attrs (list, optional): A list of attribute names to include in the representation. Defaults to None, including all attributes.
+            attrs (list, optional): A list of attribute names to be included.
 
         Returns:
-            dict: A dictionary containing the selected attributes and their values.
+            dict: Contains the selected attributes and their values.
         """
-        if (type(attrs) == list and
-            all(type(ele) == str for ele in attrs)):
+        if isinstance(attrs, list) and
+        all(isinstance(ele, str) for ele in attrs):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
