@@ -1,29 +1,27 @@
-Tasks
-0. My first square
-mandatory
+#Tasks
+## 0. My first square
+### mandatory
 Write an empty class Square that defines a square:
 
 You are not allowed to import any module
 guillaume@ubuntu:~/0x06$ cat 0-main.py
-#!/usr/bin/python3
+``#!/usr/bin/python3
 Square = __import__('0-square').Square
 
 my_square = Square()
 print(type(my_square))
-print(my_square.__dict__)
+print(my_square.__dict__)``
 
 guillaume@ubuntu:~/0x06$ ./0-main.py
 <class '0-square.Square'>
 {}
-guillaume@ubuntu:~/0x06$ 
-Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x06-python-classes
 File: 0-square.py
    
-1. Square with size
-mandatory
+## 1. Square with size
+### mandatory
 Write a class Square that defines a square by: (based on 0-square.py)
 
 Private instance attribute: size
@@ -36,7 +34,7 @@ Why size is private attribute?
 The size of a square is crucial for a square, many things depend of it (area computation, etc.), so you, as class builder, must control the type and value of this attribute. One way to have the control is to keep it privately. You will see in next tasks how to get, update and validate the size value.
 
 guillaume@ubuntu:~/0x06$ cat 1-main.py
-#!/usr/bin/python3
+`#!/usr/bin/python3
 Square = __import__('1-square').Square
 
 my_square = Square(3)
@@ -51,31 +49,25 @@ except Exception as e:
 try:
     print(my_square.__size)
 except Exception as e:
-    print(e)
+    print(e)`
 
 guillaume@ubuntu:~/0x06$ ./1-main.py
 <class '1-square.Square'>
 {'_Square__size': 3}
 'Square' object has no attribute 'size'
 'Square' object has no attribute '__size'
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 1-square.py
    
-2. Size validation
-mandatory
+## 2. Size validation
+### mandatory
 Write a class Square that defines a square by: (based on 1-square.py)
 
 Private instance attribute: size
-Instantiation with optional size: def __init__(self, size=0):
+`Instantiation with optional size: def __init__(self, size=0):
 size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
 if size is less than 0, raise a ValueError exception with the message size must be >= 0
-You are not allowed to import any module
+You are not allowed to import any module`
 guillaume@ubuntu:~/0x06$ cat 2-main.py
-#!/usr/bin/python3
+`#!/usr/bin/python3
 Square = __import__('2-square').Square
 
 my_square_1 = Square(3)
@@ -108,26 +100,20 @@ try:
     print(type(my_square_4))
     print(my_square_4.__dict__)
 except Exception as e:
-    print(e)
+    print(e)`
 
 guillaume@ubuntu:~/0x06$ ./2-main.py
-<class '2-square.Square'>
+``<class '2-square.Square'>
 {'_Square__size': 3}
 <class '2-square.Square'>
 {'_Square__size': 0}
 'Square' object has no attribute 'size'
 'Square' object has no attribute '__size'
 size must be an integer
-size must be >= 0
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 2-square.py
+size must be >= 0``
    
-3. Area of a square
-mandatory
+## 3. Area of a square
+### mandatory
 Write a class Square that defines a square by: (based on 2-square.py)
 
 Private instance attribute: size
@@ -137,7 +123,7 @@ if size is less than 0, raise a ValueError exception with the message size must 
 Public instance method: def area(self): that returns the current square area
 You are not allowed to import any module
 guillaume@ubuntu:~/0x06$ cat 3-main.py
-#!/usr/bin/python3
+`#!/usr/bin/python3
 Square = __import__('3-square').Square
 
 my_square_1 = Square(3)
@@ -154,22 +140,16 @@ except Exception as e:
     print(e)
 
 my_square_2 = Square(5)
-print("Area: {}".format(my_square_2.area()))
+print("Area: {}".format(my_square_2.area()))`
 
 guillaume@ubuntu:~/0x06$ ./3-main.py
 Area: 9
 'Square' object has no attribute 'size'
 'Square' object has no attribute '__size'
 Area: 25
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 3-square.py
    
-4. Access and update private attribute
-mandatory
+## 4. Access and update private attribute
+### mandatory
 Write a class Square that defines a square by: (based on 3-square.py)
 
 Private instance attribute: size:
@@ -206,15 +186,9 @@ guillaume@ubuntu:~/0x06$ ./4-main.py
 Area: 7921 for size: 89
 Area: 9 for size: 3
 size must be an integer
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 4-square.py
    
-5. Printing a square
-mandatory
+## 5. Printing a square
+### mandatory
 Write a class Square that defines a square by: (based on 4-square.py)
 
 Private instance attribute: size:
@@ -228,7 +202,7 @@ Public instance method: def my_print(self): that prints in stdout the square wit
 if size is equal to 0, print an empty line
 You are not allowed to import any module
 guillaume@ubuntu:~/0x06$ cat 5-main.py
-#!/usr/bin/python3
+`#!/usr/bin/python3
 Square = __import__('5-square').Square
 
 my_square = Square(3)
@@ -244,7 +218,7 @@ print("--")
 my_square.size = 0
 my_square.my_print()
 
-print("--")
+print("--")`
 
 guillaume@ubuntu:~/0x06$ ./5-main.py
 ###
@@ -264,15 +238,9 @@ guillaume@ubuntu:~/0x06$ ./5-main.py
 --
 
 --
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 5-square.py
    
-6. Coordinates of a square
-mandatory
+## 6. Coordinates of a square
+### mandatory
 Write a class Square that defines a square by: (based on 5-square.py)
 
 Private instance attribute: size:
@@ -291,7 +259,7 @@ if size is equal to 0, print an empty line
 position should be use by using space - Don’t fill lines by spaces when position[1] > 0
 You are not allowed to import any module
 guillaume@ubuntu:~/0x06$ cat 6-main.py
-#!/usr/bin/python3
+`#!/usr/bin/python3
 Square = __import__('6-square').Square
 
 my_square_1 = Square(3)
@@ -307,7 +275,7 @@ print("--")
 my_square_3 = Square(3, (3, 0))
 my_square_3.my_print()
 
-print("--")
+print("--")`
 
 guillaume@ubuntu:~/0x06$ ./6-main.py | tr " " "_" | cat -e
 ###$
@@ -323,15 +291,9 @@ ___###$
 ___###$
 ___###$
 --$
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 6-square.py
    
-7. Singly linked list
-#advanced
+## 7. Singly linked list
+### advanced
 Write a class Node that defines a node of a singly linked list by:
 
 Private instance attribute: data:
@@ -382,15 +344,9 @@ guillaume@ubuntu:~/0x06$ ./100-main.py
 5
 10
 12
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 100-singly_linked_list.py
    
-8. Print Square instance
-#advanced
+## 8. Print Square instance
+### advanced
 Write a class Square that defines a square by: (based on 6-square.py)
 
 Private instance attribute: size:
@@ -434,15 +390,9 @@ ____#####$
 ____#####$
 ____#####$
 ____#####$
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 101-square.py
    
-9. Compare 2 squares
-#advanced
+## 9. Compare 2 squares
+### advanced
 Write a class Square that defines a square by: (based on 4-square.py)
 
 Private instance attribute: size:
@@ -478,12 +428,6 @@ guillaume@ubuntu:~/0x06$ ./102-main.py
 Square 5 < Square 6
 Square 5 <= Square 6
 Square 5 != Square 6
-guillaume@ubuntu:~/0x06$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 102-square.py
    
 10. ByteCode -> Python #5
 #advanced
@@ -539,9 +483,4 @@ Disassembly of circumference:
              16 BINARY_MULTIPLY
              17 RETURN_VALUE
 Tip: Python bytecode
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 103-magic_class.py
    
