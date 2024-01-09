@@ -1,0 +1,38 @@
+#!/usr/bin/python3
+
+"""
+This module encapsulates the Student class, designed to model the essential attributes of a student.
+"""
+
+class Student:
+    """
+    Encapsulates the core properties and methods associated with a student.
+    """
+
+    def __init__(self, first_name, last_name, age):
+        """
+        Constructs a new Student instance with the provided information.
+
+        Args:
+            first_name (str): The student's first name.
+            last_name (str): The student's last name.
+            age (int): The student's age.
+        """
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def to_json(self, attrs=None):
+        """
+        Generates a dictionary representation of the Student instance, tailored for JSON serialization.
+
+        Args:
+            attrs (list, optional): A list of attribute names to include in the representation. Defaults to None, including all attributes.
+
+        Returns:
+            dict: A dictionary containing the selected attributes and their values.
+        """
+        if (type(attrs) == list and
+            all(type(ele) == str for ele in attrs)):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        return self.__dict__
