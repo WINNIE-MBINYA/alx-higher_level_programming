@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 function secondLargest (args) {
   const sortedArgs = args.sort((a, b) => b - a);
   return sortedArgs[1] || 0;
