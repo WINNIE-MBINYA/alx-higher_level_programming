@@ -1,6 +1,8 @@
 #!/usr/bin/node
-const callMeMoby = require('./101-call_me_moby').callMeMoby;
+function callXTimes (x, theFunction) {
+  for (let i = 0; i < x; i++) {
+    theFunction();
+  }
+}
 
-callMeMoby(3, function () {
-  console.log('C is fun');
-});
+module.exports = callXTimes;
